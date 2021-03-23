@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Cadastro de Exportação";
+}
+
+<form asp-action="Cadastro" asp-controller="Exportacao" asp-antiforgery=true method="POST">
+<div class="form-group">
+    <input class="form-control" name="data" type="datetime-local" value="2011-08-19T13:45:00" id="data">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Número do registro</label>
+    <input type="number" name="numero" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: 55555">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Volume</label>
+    <input type="number" class="form-control" name="volume" id="volume" placeholder="55">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Valor</label>
+    <input type="text"  name="valor" class="form-control" id="valor" >
+  </div>
+  <input type="submit" class="btn btn-primary" value="Enviar">
+</form>
